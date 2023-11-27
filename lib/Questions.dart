@@ -58,7 +58,7 @@ class _QuestionsState extends State<Questions> {
                     hintText: 'Enter number of days')),
           ),
           const SizedBox(height: 10.0),
-          const Text('On which floor you want your room',
+          const Text('On which floor you want your room 5\$ per floor',
               style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold)),
           const SizedBox(height: 10),
           SizedBox(
@@ -71,7 +71,7 @@ class _QuestionsState extends State<Questions> {
                     border: OutlineInputBorder(), hintText: 'Enter floor')),
           ),
           const SizedBox(height: 10.0),
-          const Text('if you want a suite enter 1, normal room enter 0',
+          const Text('if you want a suite(200\$) enter 1, normal room(100\$) enter 0',
               style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold)),
           const SizedBox(height: 10),
           SizedBox(
@@ -84,7 +84,7 @@ class _QuestionsState extends State<Questions> {
                     border: OutlineInputBorder(), hintText: 'Enter here')),
           ),
           const SizedBox(height: 10.0),
-          const Text('if you want a FoodService enter 1, normal room enter 0',
+          const Text('if you want a FoodService(50\$ per day) enter 1, normal room enter 0',
               style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold)),
           const SizedBox(height: 10),
           SizedBox(
