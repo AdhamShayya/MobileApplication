@@ -22,15 +22,6 @@ class PackageResult extends StatelessWidget{
               style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 20),
-            ElevatedButton(
-          onPressed: () {
-            Navigator.push(
-                context,
-                MaterialPageRoute(
-                builder: (context) => PackageResult(selectedPackage),
-            ),
-            );
-          },
           ElevatedButton(
               onPressed: () {
                 Navigator.popUntil(context, (route) => route.isFirst);
@@ -50,4 +41,3 @@ class PackageResult extends StatelessWidget{
     );
   }
 }
-
