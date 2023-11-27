@@ -23,19 +23,23 @@ class PackageResult extends StatelessWidget{
             ),
             const SizedBox(height: 20),
             ElevatedButton(
-              onPressed: () {
-                Navigator.popUntil(context, (route) => route.isFirst);
-              },
-              style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.transparent,
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(30.0),
-                      side: const BorderSide(color: Colors.grey)),
-                  textStyle:
-                  const TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
-              child: const Text('Home'),
+          onPressed: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                builder: (context) => PackageResult(selectedPackage),
             ),
-
+            );
+          },
+          style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.transparent,
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(30.0),
+                  side: const BorderSide(color: Colors.grey)),
+              textStyle:
+              const TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
+          child: const Text('Book Now'),
+        ),
           ],
         ),
       ),
