@@ -31,15 +31,19 @@ class PackageResult extends StatelessWidget{
             ),
             );
           },
-          style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.transparent,
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(30.0),
-                  side: const BorderSide(color: Colors.grey)),
-              textStyle:
-              const TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
-          child: const Text('Book Now'),
-        ),
+          ElevatedButton(
+              onPressed: () {
+                Navigator.popUntil(context, (route) => route.isFirst);
+              },
+              style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.transparent,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(30.0),
+                      side: const BorderSide(color: Colors.grey)),
+                  textStyle:
+                  const TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
+              child: const Text('Home'),
+            ),
           ],
         ),
       ),
